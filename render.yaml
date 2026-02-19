@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: coding-interview-platform
+    runtime: docker
+    plan: free
+    region: oregon
+    envVars:
+      - key: PORT
+        value: 10000
+    healthCheckPath: /healthz
